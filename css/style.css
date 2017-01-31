@@ -1,0 +1,350 @@
+//---------------------------------------------------------------------
+// HEADINGS
+//---------------------------------------------------------------------
+
+ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #4d4d4d;
+  }
+  
+  h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 18px;
+    margin-bottom: 9px;
+  }
+
+  
+  h1, .h1 {
+    font-size: 33px;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  h2, .h2 {
+    font-size: 27px;
+  }
+  
+  h3 {
+    margin-top: 26px;
+    color: #666666;
+  }
+  
+  h3 {
+    font-size: 20.8px;
+  }
+  
+  h4 {
+    margin-bottom: 2px;
+  }
+  
+  h4, .h4 {
+    font-size: 17px;
+  }
+  
+  h5 {
+    font-size: 14.3px;
+    margin-bottom: 2px;
+  }
+  
+  h5 {
+    font-size: 14.3px;
+    margin-bottom: 2px;
+  }
+  
+  h6, .h6 {
+    font-size: 12px;
+  }
+
+  //---------------------------------------------------------------------
+// LANGUAGUE BAR
+//---------------------------------------------------------------------
+
+ #brand-bar {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  border-bottom: #00adef solid 5px !important;
+  height: 41px;
+  min-height: inherit;
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+@media (min-width: 768px)
+.navbar-fixed-top, .navbar-fixed-bottom {
+  border-radius: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+@media (min-width: 768px)
+.navbar {
+  border-radius: 0;
+}
+
+.navbar {
+  position: relative;
+  min-height: auto;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+}
+
+#brand-bar .brandbar-header {
+  padding-top: 10px;
+}
+
+@media (min-width: 1200px)
+.container {
+  width: 1160px;
+}
+
+@media (min-width: 992px)
+.container {
+  width: 960px;
+}
+
+@media (min-width: 768px)
+.container {
+  width: 740px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#brand-bar .brandbar-header a {
+  padding: 0;
+  font-size: 12.35px;
+  line-height: 17.03px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+@media (min-width: 768px)
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #777;
+}
+
+
+//---------------------------------------------------------------------
+// PRIMARY MENU
+//---------------------------------------------------------------------
+
+// header#navbar .region-header .block-superfish {
+//     background: #b30f0f;
+//     padding-bottom: 5em;
+// }
+
+.region-header .block-superfish {
+  background: #f2f2f2;
+  padding-bottom: 2.9em;
+}
+
+body {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.46153846;
+  color: #333333;
+}
+
+.region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar {
+  background: #4d4d4d;
+}
+
+.sf-menu {
+  float: left;
+  margin-bottom: 1em;
+}
+
+.sf-menu, .sf-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li {
+  background: #4d4d4d;
+}
+
+.sf-menu > li {
+  float: left;
+}
+
+.region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a {
+  color: white;
+  border-right: white solid 1px;
+  text-decoration: none;
+}
+
+.sf-navbar > li > a, .sf-navbar > li > ul > li > a {
+  border: none;
+}
+
+.sf-menu a {
+  border-left: 1px solid #fff;
+  border-top: 1px solid #dFeEFF;
+  border-top: 1px solid rgba(255,255,255,.5);
+  padding: .75em 1em;
+  text-decoration: none;
+  zoom: 1;
+}
+
+.sf-menu a {
+  display: block;
+  position: relative;
+}
+
+@media print {
+  .hidden-print {
+    display: none !important; } }
+.region-header .block-superfish {
+  background: #4D4D4D;
+  padding-bottom: 2.9em; }
+  body.front .region-header .block-superfish {
+    padding-bottom: 4.75em; }
+    @media (max-width: 768px) {
+      body.front .region-header .block-superfish {
+        padding-bottom: 0; } }
+  @media (max-width: 992px) {
+    .region-header .block-superfish {
+      background: transparent; } }
+  @media (max-width: 768px) {
+    .region-header .block-superfish {
+      padding-bottom: 0; } }
+  body.i18n-ar .region-header .block-superfish {
+    font-size: 14.3px !important; }
+  body.i18n-zh-hans .region-header .block-superfish {
+    font-size: 15.6px !important; }
+  .region-header .block-superfish .sf-accordion-toggle {
+    margin-top: 15px;
+    margin-left: 4px; }
+    body.i18n-ar .region-header .block-superfish .sf-accordion-toggle {
+      margin-left: 0;
+      margin-right: 13px; }
+    .region-header .block-superfish .sf-accordion-toggle a {
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin-bottom: 11px;
+      display: inline-block; }
+      .region-header .block-superfish .sf-accordion-toggle a.sf-expanded {
+        margin-bottom: 0; }
+      .region-header .block-superfish .sf-accordion-toggle a span {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        background-color: transparent;
+        border: 0; }
+      .region-header .block-superfish .sf-accordion-toggle a:after {
+        font-family: FontAwesome;
+        color: #4d4d4d;
+        content: "\f0c9";
+        text-indent: 0;
+        font-size: 26px;
+        line-height: 1;
+        font-style: normal;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+  .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar {
+    background: #f2f2f2; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar li ul {
+      background: #f2f2f2; }
+      .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar li ul a {
+        border-right: none;
+        color: black;
+        background: #f2f2f2; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar li li {
+      background: #f2f2f2; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar li.sf-parent a {
+      background: #4d4d4d; }
+  .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:focus, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:hover, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:active {
+    background: #f2f2f2;
+    color: black; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:focus span.sf-sub-indicator, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:hover span.sf-sub-indicator, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space a:active span.sf-sub-indicator {
+      background-image: url(arrows-black.png); }
+  .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li {
+    background: #4d4d4d; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li li {
+      background: #f2f2f2;
+      color: black; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a {
+      color: white;
+      border-right: white solid 1px;
+      text-decoration: none; }
+      body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a {
+        border-right: none;
+        border-left: white solid 1px; }
+      body.i18n-zh-hans .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a {
+        padding-left: 1.5em;
+        padding-right: 1.5em; }
+      .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a:hover {
+        color: black;
+        background: #f2f2f2; }
+        .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li a:hover span.sf-sub-indicator {
+          background-image: url(arrows-black.png); }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover {
+      background: #f2f2f2; }
+      .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover a.menuparent, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover span.nolink {
+        background: #f2f2f2;
+        color: black; }
+        .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover a.menuparent span.sf-sub-indicator, .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover span.nolink span.sf-sub-indicator {
+          background-image: url(arrows-black.png); }
+      body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li.sfHover ul {
+        left: 0 !important; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li:hover {
+      background: #f2f2f2;
+      color: black; }
+      .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space li:hover span.sf-sub-indicator {
+        background-image: url(arrows-black.png); }
+  .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space span.nolink {
+    border-right: white solid 1px; }
+    body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space span.nolink {
+      border-right: none;
+      border-left: white solid 1px; }
+    .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space span.nolink:hover {
+      background: #f2f2f2;
+      color: black; }
+  .region-header .block-superfish ul#superfish-1.sf-menu-rtl sf.hidden {
+    left: auto !important; }
+  .region-header .block-superfish ul#superfish-1-accordion {
+    margin-top: 13px;
+    margin-bottom: 0; }
+    .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li {
+      background: #f2f2f2; }
+      .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li a {
+        color: black;
+        border: none;
+        border-bottom: white solid 1px; }
+        .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li a:hover {
+          background: white; }
+        .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li a:active, .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li a:focus {
+          background: #f2f2f2; }
+      .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li.sf-expanded {
+        background: white; }
+      .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li.last a {
+        border-bottom: none; }
+      .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li ul.sf-has-clone-parent li {
+        background: white; }
+        .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li ul.sf-has-clone-parent li a {
+          border-bottom: #f2f2f2 solid 1px; }
+

@@ -1083,3 +1083,14 @@ footer {
 .content-news .content-text-news{
   margin: 40px 0 20px;
 }
+
+
+/*********** SLIDER ***********/
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px,0px,0px);
+}
+
+

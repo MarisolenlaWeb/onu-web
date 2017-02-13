@@ -42,9 +42,8 @@ a:hover{
   font-size: 28px;
 }
 
-//---------------------------------------------------------------------
-// HEADINGS
-//---------------------------------------------------------------------
+
+/********** HEADINGS **********/
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -105,9 +104,9 @@ h6, .h6 {
   font-size: 12px;
 }
 
-  //---------------------------------------------------------------------
-// LANGUAGUE BAR
-//---------------------------------------------------------------------
+
+/******** LANGUAGUE BAR ********/
+
 
 .navbar-fixed-top {
   top: 0;
@@ -239,9 +238,68 @@ h6, .h6 {
     background-color: transparent;
 }
 
-//---------------------------------------------------------------------
-// Search Menu
-//---------------------------------------------------------------------
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.language-switcher button.navbar-toggle {
+    margin-top: 0;
+    border: none;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.language-switcher button.navbar-toggle span.icon-bar {
+    background-color: #00adef;
+}
+
+.language-switcher .language-title {
+    float: right;
+    margin-right: 10.4px;
+    line-height: 1.2;
+}
+
+.language-switcher #language-switcher {
+    border-top: none;
+    padding: 0;
+    float: right;
+}
+
+@media (max-width: 767px){
+  .language-switcher #language-switcher {
+      clear: both;
+  }
+}
+
+@media (max-width: 767px){
+  .language-switcher #language-switcher ul.language-switcher-locale-url {
+      margin-top: 0px;
+      width: 161px;
+  }
+  .language-switcher #language-switcher ul.language-switcher-locale-url li {
+      float: none;
+      padding-right: 0;
+  }
+  .language-switcher #language-switcher ul.language-switcher-locale-url li a {
+      background: white;
+      padding-left: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: #f2f2f2 solid 1px;
+  }
+}
+
+@media (max-width: 768px){
+  #brand-bar .brandbar-header a {
+      font-size: 12.09px;
+      letter-spacing: -0.02em;
+  }
+}
+
+
+/******** Search Menu ********/
+
 
 header#navbar {
     margin-top: 0;
@@ -374,11 +432,8 @@ header#navbar .navbar-header .navbar-btn {
     margin-bottom: 27px;
 }
 
-//---------------------------------------------------------------------
-// PRIMARY MENU
-//---------------------------------------------------------------------
 
-
+/********** PRIMARY MENU **********/
 
 .region-header .block-superfish {
   background: #f2f2f2;
@@ -674,9 +729,8 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
 }
 
 
-//---------------------------------------------------------------------
-// LIVE NOW
-//---------------------------------------------------------------------
+
+/********** LIVE NOW **********/
 
 #block-un-home-11 {
   color: #333333;
@@ -702,9 +756,7 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
 }
 
 
-//---------------------------------------------------------------------
-// SIDEBAR LATEST NEWS
-//---------------------------------------------------------------------
+/********** SIDEBAR LATEST NEWS **********/
 
 .main-container .latest-news-wrapper {
   padding-left: 18px;
@@ -758,9 +810,7 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
 }
 
 
-//---------------------------------------------------------------------
-// MAIN NEWS AND CARDS NEWS
-//---------------------------------------------------------------------
+/********** MAIN NEWS AND CARDS NEWS **********/
 
 // .main-container .region-left-news h5 {
 //   font-size: 16.25px !important;
@@ -1093,4 +1143,28 @@ footer {
     -webkit-transform: translate3d(0px,0px,0px);
 }
 
+.thumbnails-div {
+    position: relative;
+    overflow: hidden;
+}
 
+.thumbnails-div {
+    height: 552px;
+}
+
+.thumbnails-div .item {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.thumbnails-div .item .current-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.thumbnails-div .item.active .current-item {
+    border: #00adef solid 4px;
+}

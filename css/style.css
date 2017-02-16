@@ -107,6 +107,12 @@ h6, .h6 {
 
 /******** LANGUAGUE BAR ********/
 
+.navbar {
+  position: relative;
+  min-height: auto;
+  margin-bottom: 65px;
+  border: 1px solid transparent;
+}
 
 .navbar-fixed-top {
   top: 0;
@@ -132,13 +138,6 @@ h6, .h6 {
   }
 }
 
-.navbar {
-  position: relative;
-  min-height: auto;
-  margin-bottom: 65px;
-  border: 1px solid transparent;
-}
-
 #brand-bar .brandbar-header {
     padding-top: 10px;
     padding-left: 20px;
@@ -157,11 +156,14 @@ h6, .h6 {
 //   }
 // }
 
-// @media (min-width: 768px){
-//   .container {
-//     width: 740px;
-//   }
-// }
+@media (max-width: 768px){
+  .container {
+    width: 95%;
+  }
+  .main-container.container {
+    padding-left: 10px !important; 
+  }
+}
 
 .container {
   margin-right: auto;
@@ -304,7 +306,7 @@ h6, .h6 {
 header#navbar {
     margin-top: 0;
     padding: 0;
-    padding-top: 29px;
+    padding-top: 69px;
 }
 
 header#navbar .search-form {
@@ -483,6 +485,16 @@ header#navbar .navbar-header .navbar-btn {
 
 .sf-navbar > li > a, .sf-navbar > li > ul > li > a {
   border: none;
+}
+
+.sf-navbar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: transparent;
+    height: 200%;
+    width: 100%;
 }
 
 .sf-menu a {
@@ -1167,4 +1179,13 @@ footer {
 
 .thumbnails-div .item.active .current-item {
     border: #00adef solid 4px;
+}
+
+@media (max-width: 991px) {
+  .owl-carousel {
+    margin-bottom: 50px; 
+  } 
+  .region-video, .region-audio{
+    padding-bottom: 50px;
+  }
 }

@@ -237,7 +237,6 @@ h6, .h6 {
 
 .language-switcher #language-switcher ul.language-switcher-locale-url li.active a {
     font-weight: 700;
-    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -293,6 +292,15 @@ h6, .h6 {
 }
 
 @media (max-width: 768px){
+  // header#navbar .navbar-header .navbar-btn {
+  //     display: block;
+  //     width: 35px;
+  //     height: 30px;
+  //     margin-left: 0;
+  //     margin-right: 5px;
+  //     margin-bottom: 0;
+  //     background: url(../../themes/bootstrap_un/images/logo.svg) no-repeat;
+  // }
   #brand-bar .brandbar-header a {
       font-size: 12.09px;
       letter-spacing: -0.02em;
@@ -434,6 +442,15 @@ header#navbar .navbar-header .navbar-btn {
     margin-bottom: 27px;
 }
 
+@media (max-width: 768px){
+  header#navbar .search-form {
+      margin-right: 10px;
+      margin-top: 48px;
+      position: absolute;
+      right: 0;
+      top: 17px;
+  }
+}
 
 /********** PRIMARY MENU **********/
 

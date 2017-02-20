@@ -6,14 +6,6 @@
 // });
 
 jQuery(document).ready(function($) {
-    // $('.owl-carousel').owlCarousel({
-    // 	"loop":true,
-    // 	"nav":true,
-    // 	"dots":false,
-    // 	"items":1,
-    // 	"autoHeight":true,
-    // 	"navText":["Previous","Next"]
-    // }); 
     $('.owl-carousel').owlCarousel({
 	    loop:true,
 	    nav:false,
@@ -32,3 +24,15 @@ jQuery(document).ready(function($) {
 	    }
 	})
 });
+
+// MOBILE MENU
+$('.superfish-1-toggle').click(
+  function() {
+    $('.sf-menu').toggleClass("xactive");
+  });
+
+// TRIGGER DROP DOWN SUBS
+$('.sf-with-ul').click(
+  function() {
+    $(this).parent().toggleClass("xpopdrop");
+  });

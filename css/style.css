@@ -39,7 +39,12 @@ a:hover{
 }
 
 .main-title{
-  font-size: 28px;
+  margin: 0;
+}
+
+.submain-title{
+  font-size: 14px;
+  margin-top: -15px;
 }
 
 
@@ -63,7 +68,7 @@ h1, .h1 {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  // margin: 0.67em 0;
 }
 h2, .h2 {
   font-size: 27px;
@@ -140,7 +145,7 @@ h6, .h6 {
 
 #brand-bar .brandbar-header {
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 12px;
     padding-right: 0;
 }
 
@@ -155,15 +160,6 @@ h6, .h6 {
 //     width: 960px;
 //   }
 // }
-
-@media (max-width: 768px){
-  .container {
-    width: 95%;
-  }
-  .main-container.container {
-    padding-left: 10px !important; 
-  }
-}
 
 .container {
   margin-right: auto;
@@ -183,6 +179,9 @@ h6, .h6 {
 }
 
 @media (min-width: 768px){
+  .main-container.container {
+    padding-left: 10px !important; 
+  }
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
   }
@@ -263,17 +262,20 @@ h6, .h6 {
 
 .language-switcher #language-switcher {
     border-top: none;
-    padding: 0;
+    padding: 0 15px 0 0;
     float: right;
+}
+
+@media (max-width: 768px){
+  .language-switcher #language-switcher {
+    padding: 0 15px 0 15px;
+  }
 }
 
 @media (max-width: 767px){
   .language-switcher #language-switcher {
       clear: both;
   }
-}
-
-@media (max-width: 767px){
   .language-switcher #language-switcher ul.language-switcher-locale-url {
       margin-top: 0px;
       width: 161px;
@@ -291,22 +293,11 @@ h6, .h6 {
   }
 }
 
-@media (max-width: 768px){
-  // header#navbar .navbar-header .navbar-btn {
-  //     display: block;
-  //     width: 35px;
-  //     height: 30px;
-  //     margin-left: 0;
-  //     margin-right: 5px;
-  //     margin-bottom: 0;
-  //     background: url(../../themes/bootstrap_un/images/logo.svg) no-repeat;
-  // }
-  #brand-bar .brandbar-header a {
-      font-size: 12.09px;
-      letter-spacing: -0.02em;
+@media (max-width: 274px){
+  #brand-bar {
+    height: 53px;
   }
 }
-
 
 /******** Search Menu ********/
 
@@ -314,7 +305,7 @@ h6, .h6 {
 header#navbar {
     margin-top: 0;
     padding: 0;
-    padding-top: 69px;
+    padding-top: 67px;
 }
 
 header#navbar .search-form {
@@ -420,6 +411,7 @@ header#navbar .search-form .advanced-search {
 header#navbar .navbar-header {
     padding: 0;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 header#navbar .navbar-header .navbar-brand {
@@ -436,19 +428,55 @@ header#navbar .navbar-header .navbar-brand {
 
 header#navbar .navbar-header .navbar-btn {
     padding: 0;
-    margin: 0;
-    margin-right: 14px;
-    margin-left: 2px;
-    margin-bottom: 27px;
+    margin: 0 14px 0 2px;
 }
 
 @media (max-width: 768px){
+  .navbar {
+    margin-bottom: 25px;
+  }
+  .navbar-header{
+    margin-left: 0 !important;
+  }
+  .submain-title {
+    font-size: 12px;
+    margin-top: -10px;
+  }
+  header#navbar .navbar-header .navbar-brand {
+    font-size: 28px;
+    line-height: 30px;
+  }
   header#navbar .search-form {
-      margin-right: 10px;
-      margin-top: 48px;
-      position: absolute;
-      right: 0;
-      top: 17px;
+    margin-right: 10px;
+    margin-top: 48px;
+    position: absolute;
+    right: 0;
+    top: 17px;
+  }
+  header#navbar .navbar-header .navbar-btn {
+    margin: 0 !important;
+  }
+  header#navbar .navbar-header .navbar-btn img {
+    width: 35px;
+    height: 30px;
+    margin: 0px 5px 0 0;
+  }
+  #brand-bar .brandbar-header a {
+    font-size: 12.09px;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media (max-width: 550px){
+  header#navbar .search-form {
+    margin-top: 110px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 276px){
+  header#navbar .search-form {
+    margin-top: 140px;
   }
 }
 
@@ -560,22 +588,10 @@ body.front .region-header .block-superfish {
   } 
 }
 
-body.i18n-ar .region-header .block-superfish {
-  font-size: 14.3px !important; 
-}
-
-body.i18n-zh-hans .region-header .block-superfish {
-  font-size: 15.6px !important; 
-}
-
 .region-header .block-superfish .sf-accordion-toggle {
-  margin-top: 15px;
-  margin-left: 4px; 
-}
-
-body.i18n-ar .region-header .block-superfish .sf-accordion-toggle {
   margin-left: 0;
   margin-right: 13px; 
+  display: none;
 }
 
 .region-header .block-superfish .sf-accordion-toggle a {
@@ -584,12 +600,12 @@ body.i18n-ar .region-header .block-superfish .sf-accordion-toggle {
   padding: 0;
   margin-bottom: 11px;
   display: inline-block; 
+  text-decoration: inherit;
 }
 
-.region-header .block-superfish .sf-accordion-toggle a.sf-expanded {
-  margin-bottom: 0; 
+#superfish-1-toggle{
+  text-decoration:none;
 }
-
 .region-header .block-superfish .sf-accordion-toggle a span {
   font: 0/0 a;
   color: transparent;
@@ -609,6 +625,12 @@ body.i18n-ar .region-header .block-superfish .sf-accordion-toggle {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+}
+
+.xpopdrop a:active, 
+.xpopdrop a:focus {
+  font-weight: 700;
+  border-bottom: solid 1px white;
 }
 
 .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar {
@@ -741,10 +763,6 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
   background: #f2f2f2; 
 }
 
-.region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li.sf-expanded {
-  background: white; 
-}
-
 .region-header .block-superfish ul#superfish-1-accordion.sf-menu.sf-style-space li.last a {
   border-bottom: none; 
 }
@@ -757,7 +775,39 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
   border-bottom: #f2f2f2 solid 1px; 
 }
 
-
+@media only screen and (max-width: 768px) {
+  .region-header .block-superfish .sf-accordion-toggle {
+    display: block;
+  }
+  .sf-menu {
+    width: 100%!important;
+    display: none;
+  }
+  .sf-menu.xactive {
+    display: block!important;
+  }
+  .sf-menu li {
+    float: none!important;
+    display: block!important;
+    width: 100%!important;
+    border-bottom: solid 1px white;
+  }
+  .sf-menu li a {
+    float: none!important;
+  }
+  .sf-menu ul {
+    position: static!important;
+    display: none!important;
+  }
+  .xpopdrop ul {
+    display: block!important;
+  }
+  .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-space.sf-navbar li ul a {
+    border-bottom: solid 1px #f2f2f2;
+    background-color: white;
+    padding-left: 30px;
+  }
+}
 
 /********** LIVE NOW **********/
 
@@ -779,9 +829,9 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
 }
 
 .main-container.container {
-  padding-top: 0;
-  padding-left: 22px;
-  padding-right: 0;
+    padding-top: 0;
+    padding-left: 12px;
+    padding-right: 10px;
 }
 
 
@@ -840,15 +890,6 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
 
 
 /********** MAIN NEWS AND CARDS NEWS **********/
-
-// .main-container .region-left-news h5 {
-//   font-size: 16.25px !important;
-//   font-weight: 700;
-//   line-height: 1.46153846;
-//   color: black;
-//   clear: both;
-//   margin-top: 0;
-// }
 
 .main-container .region-right-news h5 {
     font-size: 13px;
@@ -970,6 +1011,15 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
   background: #D49B09;
 }
 
+@media only screen and (max-width: 767px) {
+  .region-suscribe form#suscribe-form input {
+    width: 100%;
+  }
+
+  .region-suscribe form#suscribe-form button {
+    width: 100%
+  }
+}
 
 /*********** SOCIAL MEDIA ***********/
 
@@ -1062,7 +1112,31 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
   background-position: 0 0;
 }
 
+@media (max-width: 768px){
+.social-media {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    text-align: left;
+    padding-bottom: 39px;
+    overflow: hidden;
+    border-top: #f2f2f2 solid 1px;
+    text-align: center;
+    
+    margin: 0 10px;
+  }
+  .social-media ul li {
+    display: inline-block;
+  }
+}
 /*********** FOOTER ***********/
+
+footer {
+  margin-top: 100px;
+  padding-left: 12px !important;
+  padding-right: 0 !important;
+}
 
 .footer .list-inline .footer-brand {
   height: 21px;
@@ -1102,21 +1176,9 @@ body.i18n-ar .region-header .block-superfish ul#superfish-1.sf-menu.sf-style-spa
   color: black;
 }
 
-.footer ul.nav li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-}
-
 .nav > li {
   position: relative;
   display: block;
-}
-
-footer {
-  margin-top: 100px;
-  padding-left: 22px !important;
-  padding-right: 0 !important;
 }
 
 
@@ -1163,6 +1225,20 @@ footer {
   margin: 40px 0 20px;
 }
 
+.item-content{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  .content-news .content-text-news{
+    margin: 40px 0 50px;
+  }
+  .pt-mobile{
+    padding-top: 20px;
+  }
+}
+
 
 /*********** SLIDER ***********/
 
@@ -1206,3 +1282,4 @@ footer {
     padding-bottom: 50px;
   }
 }
+

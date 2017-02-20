@@ -24,20 +24,21 @@
       <div class="container brandbar-header">
         <div class="row">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="col-md-4">
-            <a class="navbar-brand" href="/en/">Bienvenidos al CINU</a>
+          <div class="col-md-6 col-sm-7 col-xs-7">
+            <a class="navbar-brand hidden-xs" href="">Bienvenidos al Centro de Información de las Naciones Unidas</a>
+            <a class="navbar-brand hidden-lg hidden-md hidden-sm visible-xs" href="">Bienvenidos al CINU</a>
           </div><!-- /UN global brand bar -->
       
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="col-md-8 language-switcher">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#language-switcher">
+          <div class="col-md-6 col-sm-5 col-xs-5 language-switcher">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#language-switcher">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
             <div class="language-title visible-xs-inline">
-              <a href="javascript:void(0)" data-toggle="collapse" data-target="#language-switcher">Language:</a>
+              <a href="" data-toggle="collapse" data-target="#language-switcher">País</a>
             </div>
             
             <div class="navbar-collapse collapse" id="language-switcher">
@@ -47,7 +48,7 @@
                         <a href="" class="language-link">México</a>
                     </li>
                     <li class="">
-                        <a href= class="language-link">Cuba</a>
+                        <a href="" class="language-link">Cuba</a>
                     </li>
                     <li class="es last">
                         <a href="" class="language-link">República Dominicana</a>
@@ -64,12 +65,12 @@
     <header id="navbar" role="banner" class="navbar container navbar-default">
       <div class="container">
         <div class="navbar-header">
-            <a href="index.html" title="Portada" class="logo navbar-btn pull-left"><img src="img/logo-small-onu.png" alt="Portada"></a>
-            <a href="index.html" title="Noticias" class="name navbar-brand"><span class="main-title">Centro de Información de las </span>Naciones Unidas</a>
-          <div class="search-form col-md-3 pull-right">
+            <a href="index.html" title="Portada" class="logo navbar-btn pull-left img-responsive"><img src="img/logo-small-onu.png" alt="Portada"></a>
+            <h1 class="main-title"><a href="index.html" title="Portada" class="name navbar-brand">ONU NOTICIAS<p class="submain-title">México, Cuba y República Dominicana</p></a></h1>
+          <div class="search-form col-md-3 col-sm-4 col-xs-4 pull-right">
             <section class="region region-search">
               <div>
-                <h4 class="visible-xs-block toggle"><a href="javascript:void(0);">Search</a></h4>
+                <h4 class="visible-xs-block toggle"><a href="">Search</a></h4>
                 <form id="searchmain" name="gs" method="get" action="">
                   <input name="ie" value="utf8" type="hidden">
                   <input name="site" value="un_org" type="hidden">
@@ -79,7 +80,7 @@
                   <input id="proxystylesheet" name="proxystylesheet" value="UN_Website_es" type="hidden">
                   <input name="oe" value="utf8" type="hidden">
                   <input name="lr" type="hidden" value="lang_es">
-                  <input id="search" type="text" name="q" size="22" onfocus="this.value='';" value="Buscar en el sitio web de la ONU" class="textbox form-control form-text">
+                  <input id="search" type="text" name="q" size="22" onfocus="" value="Buscar en el sitio web de la ONU" class="textbox form-control form-text">
                   <button type="submit" name="Submit" value="Search" class="button btn-default btn btn-primary">Search</button>
                 </form>
                 <a href="../about-website/site-index/index.html" class="advanced-search">Índice del sitio</a>
@@ -92,9 +93,12 @@
       <div class="container">
         <section class="region region-header">
           <div id="block-superfish-1" class="block block-superfish">
+            <div class="sf-accordion-toggle sf-style-space">
+                <a class="superfish-1-toggle" href="#" ></a>
+            </div>
             <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-navbar sf-style-space sf-total-items-10 sf-parent-items-10 sf-single-items-0 superfish-processed sf-js-enabled sf-shadow sf-arrows">
                 <li class="sfHover first odd sf-item-1 sf-depth-1 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent">
-                    <a href="#" name="" class="sf-depth-1 menuparent sf-with-ul active">Noticias</a>
+                    <a href="#" name="" class="sf-depth-1 menuparent sf-with-ul">Noticias</a>
                     <ul>
                         <li class="first odd sf-item-1 sf-depth-2 sf-no-children">
                             <a href="index.html" class="sf-depth-2">Todo</a>
@@ -353,5 +357,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/superfish/hoverIntent.js"></script>
     <script src="js/superfish/superfish.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,9 +1,11 @@
 
-// jQuery(document).ready(function(){
-// 	jQuery('ul.sf-menu').superfish({
-// 		hoverClass: 'sfHover'
-// 	});
-// });
+jQuery(document).ready(function(){
+	jQuery('ul#superfish-1').superfish({
+		pathClass:	'current',
+		hoverClass: 'sfHover',
+		cssArrows:   true,
+	});
+});
 
 jQuery(document).ready(function($) {
     $('.owl-carousel').owlCarousel({
